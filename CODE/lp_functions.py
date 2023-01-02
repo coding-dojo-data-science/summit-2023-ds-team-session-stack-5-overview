@@ -299,7 +299,7 @@ def annotate_hbars(ax, ha='left',va='center',size=12,  xytext=(4,0),
         bar_ax = bar.get_y() + bar.get_height()/2
 
         # ha and va stand for the horizontal and vertical alignment
-        ax.annotate(f"{val:.3f}", (x,bar_ax),ha=ha,va=va,size=size,
+        ax.annotate(f"{val:,.2f}", (x,bar_ax),ha=ha,va=va,size=size,
                     xytext=xytext, textcoords=textcoords)
 
         
